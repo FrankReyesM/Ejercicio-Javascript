@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css"> 
+    <title>Cajero Automático</title>
+</head>
+<body>
+
+    <div class="container mt-5">
+            <div class="jumbotron">
+                <h1 class="display-4 text-center"><strong>Cajero-Software</strong></h1>
+            </div>
+          <br>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="nombreUsuario">Nombre de Usuario:</label>
+                    <input type="text" class="form-control" id="nombreUsuario">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="cantidadRetiro">Cantidad a Retirar (en dólares):</label>
+                    <input type="number" class="form-control" id="cantidadRetiro">
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button class="btn btn-primary btn-lg" id="calcular">Calcular</button>
+            <button class="btn btn-secondary btn-lg" id="limpiar">Limpiar</button>
+        </div>
+        <h3 class="mt-4">Resultado:</h3>
+        <div id="nombreUsuarioContainer"></div>
+        <div id="resultado" class="mt-3"></div>
+    </div>
+
+
+    <script src="JavaScript.js"></script> 
+    >
+</body>
+</html>
